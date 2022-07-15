@@ -1,0 +1,32 @@
+*{
+    margin: 0 !important;
+}
+
+form.container{
+    width: 90%;
+}
+
+#iconbuscar{
+    background-color: var(--my-yellowoscuro);
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: var(--my-colorblue);
+}
+
+#inputbuscar{
+    background-color: var(--my-yellowoscuro);
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    caret-color: var(--my-colorblue);
+}
+
+#inputbuscar::placeholder{
+    padding-left: 5px;
+}
+
+#inputbuscar:focus::placeholder{
+    color: var(--my-yellowoscuro);
+}
+

@@ -1,0 +1,57 @@
+#Navbar-nota{
+    background-color: var(--my-coloryellow);
+    border-bottom: 3px solid var(--my-colorblue);
+}
+
+#container-agregar-notas{
+    border-radius: 20px;
+    border: 2px solid var(--my-yellowoscuro);
+    min-height: 80vh;
+    width: 90%;
+}
+
+#imagen-agregar{
+    object-fit: cover;
+    object-position: center center;
+    max-height: 150px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+#input-titulo{
+    border: none;
+    background-color: var(--my-yellowclaro);
+    caret-color: var(--my-colorblue);
+    font-size: xx-large;
+}
+
+#input-titulo::placeholder{
+    padding-left: 5px;
+}
+
+#input-titulo:focus::placeholder{
+    color: var(--my-yellowclaro);
+}
+
+#agregar-textarea{
+    font-size: larger;
+    caret-color: var(--my-colorblue);
+}
+
+#agregar-textarea:focus-visible{
+    outline: none;
+}
+
+#agregar-textarea:focus::placeholder{
+    color: var(--my-yellowclaro);
+}
+
+
+[contenteditable=true]:empty:before{
+    content: attr(placeholder);
+    pointer-events: none;
+    display: block; /* For Firefox */
+    color: #6C757D;
+}

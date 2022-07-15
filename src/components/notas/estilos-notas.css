@@ -1,0 +1,37 @@
+#card-agregar-notas{
+    background-color: var(--my-yellowclaro);
+    border: 5px dashed var(--my-yellowoscuro);
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+}
+
+#card-agregar-notas:hover{
+    background-color: var(--my-coloryellow);
+}
+
+#card-notas{
+    border: 2px solid var(--my-yellowoscuro);
+    background-color: var(--my-coloryellow);
+    cursor: pointer;
+}
+
+#card-notas:hover{
+    background-color: var(--my-yellowoscuro);
+}
+
+#imagen-card{
+    object-fit: cover;
+    object-position: center center;
+    max-height: 140px;
+}
+
+/* solo mostrar tres lineas del texto-card */
+
+#text-card {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+}

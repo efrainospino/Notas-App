@@ -1,0 +1,81 @@
+#card-agregar-tareas{
+    background-color: var(--my-yellowclaro);
+    border: 5px dashed var(--my-yellowoscuro);
+    cursor: pointer;
+    height: 35px;
+    width: 97%;
+}
+
+.input-alert{
+    background-color: var(--my-yellowclaro) !important;
+    border-color: var(--my-yellowoscuro) !important;
+}
+
+.btn-alert-confirm{
+    background-color: var(--my-coloryellow);
+    border-color: var(--my-yellowoscuro);
+}
+
+.btn-alert-confirm:focus, .btn-alert-confirm:active{
+    background-color: var(--my-coloryellow);
+    border-color: var(--my-yellowoscuro);
+}
+
+.btn-alert-confirm:hover{
+    background-color: var(--my-yellowoscuro);
+    border-color: var(--my-yellowoscuro);
+}
+
+.btn-alert-cancel{
+    background-color: rgb(201, 201, 201);
+    border-color: rgb(167, 167, 167);
+}
+
+.btn-alert-cancel:focus, .btn-alert-cancel:active{
+    background-color: rgb(201, 201, 201);
+    border-color: rgb(167, 167, 167);
+}
+
+.btn-alert-cancel:hover{
+    background-color: rgb(167, 167, 167);
+    border-color: rgb(167, 167, 167);
+}
+
+#card-agregar-tareas:hover{
+    background-color: var(--my-coloryellow);
+}
+
+#card-tareas{
+    height: 30px;
+    width: 90%;
+    cursor: pointer;
+    background-color: var(--my-coloryellow);
+    border-color: var(--my-yellowoscuro);
+}
+
+#card-tareas:hover{
+    background-color: var(--my-yellowoscuro);
+}
+
+input[type="checkbox"]{
+    height: 25px;
+    width: 25px;
+    margin-right: 8px;
+    background-color: var(--my-coloryellow);
+    border-color: var(--my-yellowoscuro);
+}
+
+input[type="checkbox"]:focus{
+   border-color: var(--my-yellowoscuro);
+}
+
+
+/* solo una linea  */
+
+#text-card-tareas {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    overflow: hidden;
+}

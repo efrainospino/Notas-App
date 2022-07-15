@@ -1,0 +1,36 @@
+#container-login{
+    min-height: 100vh !important;
+}
+
+#card-login{
+    min-width: 350px;
+    max-width: 350px;
+    border-color: var(--my-yellowoscuro);
+}
+
+#inputs-registro>input{
+    background-color: var(--my-yellowclaro) !important;
+    border-color: var(--my-yellowoscuro) !important;
+}
+
+#button-ingresar{
+    background-color: var(--my-coloryellow);
+    border-color: var(--my-yellowoscuro);
+    color: rgb(0, 0, 0);
+}
+
+.alert{
+    font-size: small;
+}
+
+#button-ingresar:hover{
+    background-color: var(--my-yellowoscuro);
+}
+
+.ancla-registrarse{
+    color: rgb(191, 193, 131);
+}
+
+.ancla-registrarse:hover{
+    color: rgb(171, 172, 117);
+}
