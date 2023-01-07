@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const clienteAxios = axios.create({
-    baseURL: 'http://localhost:5001'
+    baseURL: 'https://production-na.up.railway.app'
 });
 
 export default clienteAxios;
