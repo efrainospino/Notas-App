@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Notas-App/static/css/main.2230300b.css",
-    "main.js": "/Notas-App/static/js/main.5c2fdd02.js",
+    "main.css": "/Notas-App/static/css/main.76ca5ecb.css",
+    "main.js": "/Notas-App/static/js/main.19bc11c1.js",
     "static/media/Logo-navbar.png": "/Notas-App/static/media/Logo-navbar.edd0de77de4c1cbbaac0.png",
     "index.html": "/Notas-App/index.html",
-    "main.2230300b.css.map": "/Notas-App/static/css/main.2230300b.css.map",
-    "main.5c2fdd02.js.map": "/Notas-App/static/js/main.5c2fdd02.js.map"
+    "main.76ca5ecb.css.map": "/Notas-App/static/css/main.76ca5ecb.css.map",
+    "main.19bc11c1.js.map": "/Notas-App/static/js/main.19bc11c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.2230300b.css",
-    "static/js/main.5c2fdd02.js"
+    "static/css/main.76ca5ecb.css",
+    "static/js/main.19bc11c1.js"
   ]
 }
