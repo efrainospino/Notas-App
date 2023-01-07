@@ -1,9 +1,29 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './estilos-navbar.css';
 import Logo from '../../Media/Logo-navbar.png';
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+
+
+import {context} from '../../context/context'
 
 const Navbar = () => {
+
+    let Navigate = useNavigate();
+    const {auth, guardarAuth, setNotas} = useContext(context);
+
+    const cerrarSesion = () => {
+        guardarAuth({
+            token: '',
+            idUsuario: '',
+            auth: false,
+            user: '',
+            notas: {}
+        });
+        setNotas([]);
+        localStorage.setItem('token', '');
+        Navigate("/login", { replace: true });
+    }
+
   return (
     <>
         <nav className="navbar navbar-expand-lg" id='Navbar'>
@@ -25,10 +45,15 @@ const Navbar = () => {
                         </li>
                         <li className="nav-item dropdown me-5 pe-3">
                             <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i className="fa-regular fa-circle-user fa-lg" id='iconcss'></i> User
+                                <i className="fa-solid fa-user fa-lg me-1" id='iconcss'></i> {auth.user}
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown" id='dropdowncss'>
-                                <li><NavLink className="dropdown-item" to="/login">Cerrar sesión</NavLink></li>
+                                <li>
+                                    <button className="btn btn-outline border-0" onClick={cerrarSesion}>
+                                    <i className="fa-solid fa-arrow-right-from-bracket fa-lg me-2" id='iconcss'></i>
+                                    Cerrar sesión
+                                    </button>
+                                </li>
                             </ul>
                         </li>
                     </ul>

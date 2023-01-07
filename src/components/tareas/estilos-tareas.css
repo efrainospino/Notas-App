@@ -3,7 +3,7 @@
     border: 5px dashed var(--my-yellowoscuro);
     cursor: pointer;
     height: 35px;
-    width: 97%;
+    width: 90%;
 }
 
 .input-alert{
@@ -47,7 +47,7 @@
 
 #card-tareas{
     height: 30px;
-    width: 90%;
+    width: 80%;
     cursor: pointer;
     background-color: var(--my-coloryellow);
     border-color: var(--my-yellowoscuro);
